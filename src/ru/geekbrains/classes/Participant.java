@@ -2,6 +2,8 @@ package ru.geekbrains.classes;
 
 public interface Participant {
 
+    String getName();
+
     boolean isOnDistance();
 
     void run(int distance);

@@ -16,6 +16,11 @@ public class Robot implements Participant {
         this.onDistance = true;
     }
 
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
     public boolean isOnDistance() {
         return onDistance;
     }
@@ -54,4 +59,8 @@ public class Robot implements Participant {
     }
 
     // TODO переопределить toString() по аналогии с Animal
+    @Override
+    public String toString() {
+        return "Робот " + name + " : " + (isOnDistance() ? "на дистанции" : "сошел с дистанции");
+    }
 }

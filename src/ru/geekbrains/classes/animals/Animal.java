@@ -19,14 +19,16 @@ public abstract class Animal implements Participant {
         this.onDistance = true;
     }
 
-    public String getName() {
-        return name;
-    }
+
 
     public boolean isOnDistance() {
         return onDistance;
     }
 
+    @Override
+    public String getName() {
+        return this.name;
+    }
     public abstract void voice();
 
     @Override
