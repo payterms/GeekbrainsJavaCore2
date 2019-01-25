@@ -14,18 +14,15 @@ import ru.geekbrains.classes.obstacles.Obstacle;
 */
 public class Team {
     private String name;// название команды
-    private Participant participants[] = new Participant[4];    // участники
+    private Participant participants[] ;    // участники
 
     public Team(String name) {
         this.name = name;
     }
 
-    public Team(String name,Participant participantOne,Participant participantTwo, Participant participantThree,Participant participantFour ) {
+    public Team(String name,Participant ... participantsGiven ) {
         this.name = name;
-        this.participants[0] = participantOne;
-        this.participants[1] = participantTwo;
-        this.participants[2] = participantThree;
-        this.participants[3] = participantFour;
+        this.participants = participantsGiven;
     }
 
     public void getTeamInfo() {

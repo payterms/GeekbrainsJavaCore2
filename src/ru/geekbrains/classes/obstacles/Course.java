@@ -6,7 +6,7 @@ import ru.geekbrains.classes.Team;
 public class Course {
     private Obstacle obstacles[];
 
-    public Course(Obstacle[] obstacles) {
+    public Course(Obstacle ... obstacles) {
         this.obstacles = obstacles;
     }
     public void doIt(Team team){
